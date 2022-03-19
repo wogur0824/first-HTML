@@ -4,14 +4,8 @@
       <title>WEB1-CSS</title>
       <meta charset="utf-8">
       <style>
-      body{
-        margin:0;
-      }
-        #active {
-          color:red;
-        }
-        .saw {
-          color:gray;
+        body{
+          margin:0;
         }
         a {
           color:black;
@@ -30,34 +24,47 @@
           margin:0;
           padding:20px;
         }
+        #grid {
+          display:grid;
+          grid-template-columns: 150px 1fr;
+        }
+        #grid ol{
+          padding-left:33px;
+        }
+        #grid #article{
+          padding:25px;
+          padding-top: 5px;
+        }
       </style>
     </head>
 
     <body>
       <h1><a href="index.html">WEB1</a></h1>
-      <ol>
-        <li><a href="1.html" class="saw">HTML</a></li>
-        <li><a href="2.html" class="saw" id="active">CSS</a></li>
-        <li><a href="3.html">JAVASCRIPT</a></li>
-      </ol>
-
-      <!-- <h1><a href="index.html"><font color="red">WEB1</font></a></h1>
-      <ol>
-        <li><a href="1.html"><font color="red">HTML</font></a></li>
-        <li><a href="2.html"><font color="red">CSS</font></a></li>
-        <li><a href="3.html"><font color="red">JAVASCRIPT</font></a></li>
-      </ol> -->
-
-      <h2>CSS이란</font></h2>
-      <p><a href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/a" target="_blank" title="anchor 설명">a태그</a>는 anchor의 약자로 링크를 의미합니다.</p>
-      <h3>h1은 제목을 의미한다.</h3>
-      <h4>h뒤에 숫자가 클수록 글자 크기는 작아진다.</h4>
-      br태그는 줄바꿈을 의미한다.</br>
-      <strong>strong태그</strong>는 진하게 강조를 할때 쓰인다.</br>
-      <u>u태그</u>는 밑줄을 할때 쓰이는거다.
-      <p>p태그는 단락을 좀 더 시각적으로 표현해준다.그래서 여백이 생긴다.</p>
-      <p style="margin-top:25px;">p태그에서는 CSS로 표현을 좀 더 자유롭게 사용할 수 있다.</p>
-      <img src="coding.jpg" width="25%">
-      <p>img태크는 꼭 속성와 함께 쓰이고 속성 중 src속성에는 자신이 넣고자 하는 이미지 이름을 입력해야된다. 그리고 두번째 속성에서 이미지의 크기를 조절하는 속성은 width속성이다.</p>
+      <div id="grid">
+          <ol>
+            <li><a href="1.html">HTML</a></li>
+            <li><a href="2.html">CSS</a></li>
+            <li><a href="3.html">JAVASCRIPT</a></li>
+          </ol>
+          <!-- <h1><a href="index.html"><font color="red">WEB1</font></a></h1>
+          <ol>
+            <li><a href="1.html"><font color="red">HTML</font></a></li>
+            <li><a href="2.html"><font color="red">CSS</font></a></li>
+            <li><a href="3.html"><font color="red">JAVASCRIPT</font></a></li>
+          </ol> -->
+          <div id="article">
+            <h2>CSS이란</font></h2>
+            <p><a href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/a" target="_blank" title="anchor 설명">a태그</a>는 anchor의 약자로 링크를 의미합니다.</p>
+            <h3>h1은 제목을 의미한다.</h3>
+            <h4>h뒤에 숫자가 클수록 글자 크기는 작아진다.</h4>
+            br태그는 줄바꿈을 의미한다.</br>
+            <strong>strong태그</strong>는 진하게 강조를 할때 쓰인다.</br>
+            <u>u태그</u>는 밑줄을 할때 쓰이는거다.
+            <p>p태그는 단락을 좀 더 시각적으로 표현해준다.그래서 여백이 생긴다.</p>
+            <p style="margin-top:25px;">p태그에서는 CSS로 표현을 좀 더 자유롭게 사용할 수 있다.</p>
+            <img src="coding.jpg" width="25%">
+            <p>img태크는 꼭 속성와 함께 쓰이고 속성 중 src속성에는 자신이 넣고자 하는 이미지 이름을 입력해야된다. 그리고 두번째 속성에서 이미지의 크기를 조절하는 속성은 width속성이다.</p>
+          </div>
+        </div>
     </body>
 </html>
