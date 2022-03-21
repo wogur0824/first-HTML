@@ -22,6 +22,9 @@ ol{
   display:grid;
   grid-template-columns: 150px 1fr;
 }
+#grid ol li a{
+  color:blue;
+}
 #grid ol{
   padding-left:33px;
 }
@@ -33,9 +36,9 @@ ol{
   #grid {
     display:block;
   }
-  ol{
+  /* ol{
     border-right:none;
-  }
+  } */
   h1 {
     border-bottom:none;
   }
