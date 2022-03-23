@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Object</h1>
+    <h2>Create</h2>
+    <script>
+      var cor = {
+        "programer":"egoing",
+        "designer":"kim"
+      };
+      document.write("programer : " + cor.programer + '<br>');
+      document.write("designer : " + cor.designer + '<br>');
+      cor.bookkeeper = "duru";
+      document.write("bookkeeper : " + cor.bookkeeper + '<br>');
+      cor["data scientist"] = "jin";
+      document.write("data scientist : " + cor["data scientist"] + '<br>');
+    </script>
+    <h2>Interate</h2>
+    <script>
+      for(var key in cor) {
+        document.write(key + ' : ' + cor[key]+'<br>');
+      }
+    </script>
+    <h2>Property & Method</h2>
+    <script>
+      // === fuction showAll() {};
+      cor.showAll = function(){
+          for(var key in this) {
+            if(key!=="showAll") {
+              document.write(key + ' : ' + this[key]+'<br>');
+            }
+          }
+        }
+      cor.showAll();
+    </script>
+  </body>
+</html>
